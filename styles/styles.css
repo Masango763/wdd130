@@ -1,0 +1,38 @@
+/* Limit the main content width */
+main {
+    max-width: 800px;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Aside section styling */
+aside {
+    width: 300px;
+    margin: 1rem;
+    border: 1px solid #999;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Zimbabwe image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraph styling */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #000;
+    text-align: center;
+}
