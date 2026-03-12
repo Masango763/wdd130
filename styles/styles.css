@@ -21,8 +21,9 @@ nav {
 
 nav a {
     color: white;
-    padding: 10px;
-    display: block;
+    padding: 10px 15px;
+    display: inline-block;
+    /* horizontal navigation */
     text-decoration: none;
     font-weight: bold;
 }
@@ -98,6 +99,8 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 /* =========================
@@ -132,6 +135,7 @@ img {
 
     nav a {
         display: block;
+        /* vertical navigation on small screens */
         margin: 0.5rem 0;
     }
 }
