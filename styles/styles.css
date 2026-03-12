@@ -11,34 +11,34 @@ body {
 }
 
 /* =========================
-   Header & Navigation
+   Navigation (Required Rule)
    ========================= */
-header {
+nav {
     background-color: #003366;
-    color: white;
-    padding: 1rem;
+    padding: 10px;
     text-align: center;
 }
 
-header nav {
-    margin-top: 0.5rem;
-}
-
-header nav a {
+nav a {
     color: white;
+    padding: 10px;
+    display: block;
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
 /* =========================
    Headings
    ========================= */
-h1,
+h1 {
+    color: #003366;
+    text-align: center;
+}
+
 h2 {
     margin: 0.5rem 0;
     text-align: center;
@@ -49,20 +49,20 @@ h2 {
    ========================= */
 main {
     max-width: 840px;
-    /* per assignment */
+    /* required by assignment */
     margin: 1rem auto;
     padding: 1rem;
 }
 
 /* =========================
-   All Images Consistent Size
+   Images inside main (Required Rule)
    ========================= */
-main img,
-aside img {
+main img {
     width: 200px;
-    /* consistent width for all images */
     height: auto;
-    /* maintain aspect ratio */
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
     display: block;
     margin: 1rem auto;
 }
@@ -89,11 +89,15 @@ aside {
     width: 20rem;
     margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
-    /* subtle border */
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 /* =========================
@@ -126,7 +130,7 @@ img {
         margin: 1rem auto;
     }
 
-    header nav a {
+    nav a {
         display: block;
         margin: 0.5rem 0;
     }
