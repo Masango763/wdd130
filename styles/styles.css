@@ -1,6 +1,7 @@
 /* =========================
    Global Styles
    ========================= */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -11,8 +12,9 @@ body {
 }
 
 /* =========================
-   Navigation (Required Rule)
+   Navigation
    ========================= */
+
 nav {
     background-color: #003366;
     padding: 10px;
@@ -23,7 +25,6 @@ nav a {
     color: white;
     padding: 10px 15px;
     display: inline-block;
-    /* horizontal navigation */
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,6 +36,7 @@ nav a:hover {
 /* =========================
    Headings
    ========================= */
+
 h1 {
     color: #003366;
     text-align: center;
@@ -48,16 +50,17 @@ h2 {
 /* =========================
    Main Content
    ========================= */
+
 main {
     max-width: 840px;
-    /* required by assignment */
     margin: 1rem auto;
     padding: 1rem;
 }
 
 /* =========================
-   Images inside main (Required Rule)
+   Images inside main
    ========================= */
+
 main img {
     width: 200px;
     height: auto;
@@ -71,21 +74,24 @@ main img {
 /* =========================
    Paragraphs
    ========================= */
+
 p {
     padding: 0;
     text-align: justify;
 }
 
 /* =========================
-   Sections inside main
+   Sections
    ========================= */
+
 section {
     margin-bottom: 2rem;
 }
 
 /* =========================
-   Aside Section (Week 2)
+   Aside Section
    ========================= */
+
 aside {
     width: 20rem;
     margin: 1rem auto;
@@ -106,6 +112,7 @@ aside img {
 /* =========================
    Footer
    ========================= */
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -117,6 +124,7 @@ footer {
 /* =========================
    Responsive Images
    ========================= */
+
 img {
     max-width: 100%;
     height: auto;
@@ -125,6 +133,7 @@ img {
 /* =========================
    Mobile adjustments
    ========================= */
+
 @media (max-width: 600px) {
 
     main,
@@ -135,7 +144,7 @@ img {
 
     nav a {
         display: block;
-        /* vertical navigation on small screens */
         margin: 0.5rem 0;
     }
+
 }
