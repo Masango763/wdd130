@@ -27,7 +27,7 @@ nav {
     background-color: #003366;
     padding: 10px;
 
-    /* Makes links appear horizontally */
+    /* Horizontal navigation */
     display: flex;
     justify-content: center;
 }
@@ -36,7 +36,7 @@ nav a {
     color: white;
     padding: 10px 15px;
     display: block;
-    /* REQUIRED by audit */
+    /* Required by audit */
     text-decoration: none;
     font-weight: bold;
 }
@@ -127,15 +127,16 @@ aside img {
 }
 
 /* =========================
-   Footer
+   Footer Banner
    ========================= */
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    background-color: #003366;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #f0f0f0;
+    padding: 15px;
+    font-weight: bold;
 }
 
 /* =========================
