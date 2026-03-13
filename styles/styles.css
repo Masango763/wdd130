@@ -12,20 +12,31 @@ body {
 }
 
 /* =========================
+   Header
+   ========================= */
+
+header {
+    background-color: #003366;
+}
+
+/* =========================
    Navigation
    ========================= */
 
 nav {
     background-color: #003366;
     padding: 10px;
-    text-align: center;
+
+    /* Makes links appear horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
     color: white;
     padding: 10px 15px;
     display: block;
-    /* Updated to pass audit */
+    /* REQUIRED by audit */
     text-decoration: none;
     font-weight: bold;
 }
@@ -71,10 +82,8 @@ main img {
     width: 200px;
     height: auto;
     border: 2px solid #003366;
-    /* Updated border */
     padding: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    /* Updated box-shadow */
     display: block;
     margin: 1rem auto;
 }
@@ -103,11 +112,10 @@ section {
 aside {
     width: 20rem;
     margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #003366;
-    /* Updated color to match theme */
     text-align: center;
 }
 
@@ -151,9 +159,12 @@ img {
         margin: 1rem auto;
     }
 
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 
+    nav a {
+        margin: 0.5rem 0;
+    }
 }
