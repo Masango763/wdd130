@@ -77,14 +77,21 @@ ul {
 }
 
 /* =========================
-   Footer Banner
+   Footer Banner (matches header)
    ========================= */
 footer {
     background-color: #003366;
+    /* Same as header */
     color: white;
     text-align: center;
     padding: 1rem 0;
+    /* Same height as header */
     margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 /* =========================
