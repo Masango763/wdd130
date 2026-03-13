@@ -1,9 +1,11 @@
+/* Global Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #f5f5f5;
 }
 
+/* Header */
 header {
     background-color: #003366;
     color: white;
@@ -11,21 +13,14 @@ header {
     padding: 1rem;
 }
 
-nav {
-    background-color: #003366;
-    padding: 10px;
+header h2 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-nav a {
-    color: white;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Main Content */
 main {
-    max-width: 840px;
+    max-width: 700px;
     margin: 30px auto;
     padding: 20px;
     background-color: white;
@@ -34,44 +29,57 @@ main {
 }
 
 h1 {
-    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: #003366;
+    margin-bottom: 10px;
 }
 
-main img {
-    width: 200px;
-    height: auto;
-    border: 2px solid #003366;
-    padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+section {
+    margin-bottom: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 600px;
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    text-align: center;
+/* Links */
+a {
+    color: #003366;
+    text-decoration: none;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+a:hover {
+    text-decoration: underline;
 }
 
-p {
-    padding: 0;
+/* Lists */
+ul {
+    padding-left: 20px;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    main {
+        padding: 15px;
+    }
 }
