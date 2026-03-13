@@ -30,7 +30,6 @@ picture img {
     max-width: 600px;
     display: block;
     margin: 0 auto 20px auto;
-    border-radius: 4px;
 }
 
 section {
@@ -39,10 +38,6 @@ section {
 
 h2 {
     color: #003366;
-}
-
-ul {
-    padding-left: 20px;
 }
 
 footer {
