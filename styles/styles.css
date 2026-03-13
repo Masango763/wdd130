@@ -17,6 +17,7 @@ body {
 
 header {
     background-color: #003366;
+    /* Blue banner */
     padding: 10px 0;
 }
 
@@ -25,10 +26,11 @@ header {
    ========================= */
 
 nav {
-    background-color: #003366;
-    padding: 10px;
     display: flex;
     justify-content: center;
+    /* Horizontal alignment */
+    background-color: #003366;
+    padding: 10px 0;
 }
 
 nav a {
@@ -73,10 +75,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================
-   Images inside main
-   ========================= */
-
 main img {
     width: 200px;
     height: auto;
@@ -87,18 +85,10 @@ main img {
     margin: 1rem auto;
 }
 
-/* =========================
-   Paragraphs
-   ========================= */
-
-p {
+main p {
     padding: 0;
     text-align: justify;
 }
-
-/* =========================
-   Sections
-   ========================= */
 
 section {
     margin-bottom: 2rem;
@@ -131,13 +121,17 @@ aside img {
 
 footer {
     background-color: #003366;
-    /* Same color as header */
+    /* Same as header */
     color: white;
     text-align: center;
-    /* Centers copyright text */
     padding: 10px 0;
-    /* Same height feel as header */
     margin-top: 15px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
 }
 
 /* =========================
