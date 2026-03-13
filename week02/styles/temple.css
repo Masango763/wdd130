@@ -1,54 +1,111 @@
+/* =========================
+   Global Styles
+   ========================= */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    background-color: #f5f5f5;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* =========================
+   Header
+   ========================= */
 header {
     background-color: #003366;
+    /* Same as navigation/footer theme */
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
 }
 
+/* =========================
+   Main Content
+   ========================= */
 main {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 20px;
+    max-width: 840px;
+    margin: 1rem auto;
+    padding: 1rem;
     background-color: white;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings */
 h1 {
+    color: #003366;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-picture img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 4px;
-}
-
-section {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 h2 {
     color: #003366;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-footer {
+    margin: 0.5rem 0;
     text-align: center;
-    padding: 1rem;
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
-    background-color: #f0f0f0;
+}
+
+/* Images inside main */
+main img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #003366;
+    padding: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
+    text-align: justify;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+    background-color: #003366;
+    /* Same as header */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* =========================
+   Responsive Images
+   ========================= */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   Mobile adjustments
+   ========================= */
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    main img {
+        width: 100%;
+    }
 }
