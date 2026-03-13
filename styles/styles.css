@@ -5,13 +5,15 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+/* Header Navigation Bar */
 nav {
     background-color: #003366;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    /* centers navigation links */
+    /* centers the navigation */
+    align-items: center;
+    gap: 10px;
 }
 
 /* Navigation Links */
@@ -24,12 +26,18 @@ nav a {
     font-weight: bold;
 }
 
-/* Navigation Hover */
+/* Arrow between links */
+nav a:first-child::after {
+    content: " → ";
+    color: white;
+}
+
+/* Hover Effect */
 nav a:hover {
     background-color: #005599;
 }
 
-/* Main Content Area */
+/* Main Content */
 main {
     max-width: 840px;
     margin: auto;
@@ -40,7 +48,7 @@ h1 {
     color: #003366;
 }
 
-/* Images inside main */
+/* Images in Main */
 main img {
     width: 150px;
     height: auto;
@@ -49,7 +57,7 @@ main img {
     box-shadow: 0 0 10px gray;
 }
 
-/* Paragraph Styling */
+/* Paragraphs */
 p {
     padding: 0;
 }
@@ -75,7 +83,7 @@ footer {
     margin-top: 20px;
     border-top: 2px solid #003366;
     text-align: center;
-    /* required by audit */
+    /* centers copyright text */
     background-color: #003366;
     color: white;
     padding: 1rem 0;
@@ -85,5 +93,3 @@ footer {
 footer p {
     margin: 0;
 }
-
-s
