@@ -1,11 +1,11 @@
-/* Universal Reset */
+/* REQUIRED Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* Base Styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
@@ -22,18 +22,18 @@ nav {
 
 nav a {
     color: white;
+    padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 12px;
 }
 
 nav a:hover {
     background-color: #005599;
 }
 
-/* Main Layout */
+/* Main Content */
 main {
-    max-width: 900px;
+    max-width: 840px;
     margin: 2rem auto;
     padding: 1rem;
 }
@@ -57,7 +57,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Images */
+/* Images in main */
 main img {
     width: 150px;
     float: right;
@@ -65,11 +65,6 @@ main img {
     border: 2px solid #333;
     padding: 5px;
     box-shadow: 0 0 10px gray;
-}
-
-/* Paragraphs */
-p {
-    line-height: 1.5;
 }
 
 /* Aside */
@@ -80,15 +75,20 @@ aside {
     position: relative;
 }
 
+/* FIXED: Center the aside image */
 aside img {
-    width: 100%;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Overlay heading */
 aside h2 {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5px 10px;
@@ -97,21 +97,22 @@ aside h2 {
 
 /* Footer */
 footer {
+    margin-top: 20px;
     text-align: center;
     background-color: #003366;
     color: white;
     padding: 1rem;
 }
 
-/* Class Selectors */
+/* Class Selectors (REQUIRED) */
 .box {
     margin: 1rem;
-    padding: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
     background-color: #ddd;
 }
 
-/* Temple List */
+/* Temple list styling */
 ul.box {
     list-style: none;
 }
