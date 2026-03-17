@@ -1,8 +1,13 @@
+/* Universal Selector (REQUIRED) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Base Page Styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header Navigation Bar */
@@ -11,7 +16,6 @@ nav {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    /* centers the navigation */
     align-items: center;
     gap: 10px;
 }
@@ -21,12 +25,11 @@ nav a {
     color: white;
     padding: 10px 15px;
     display: block;
-    /* required by audit */
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Arrow between links */
+/* Arrow between first two links */
 nav a:first-child::after {
     content: " → ";
     color: white;
@@ -55,6 +58,8 @@ main img {
     border: 2px solid #333;
     padding: 5px;
     box-shadow: 0 0 10px gray;
+    float: right;
+    margin-left: 1rem;
 }
 
 /* Paragraphs */
@@ -65,11 +70,8 @@ p {
 /* Aside Section */
 aside {
     width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid #333;
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
+    text-align: center;
+    position: relative;
 }
 
 /* Aside Image */
@@ -78,12 +80,19 @@ aside img {
     height: auto;
 }
 
+/* Heading Overlay */
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
 /* Footer */
 footer {
     margin-top: 20px;
     border-top: 2px solid #003366;
     text-align: center;
-    /* centers copyright text */
     background-color: #003366;
     color: white;
     padding: 1rem 0;
@@ -92,4 +101,13 @@ footer {
 /* Footer Paragraph */
 footer p {
     margin: 0;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
