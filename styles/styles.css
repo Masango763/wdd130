@@ -5,58 +5,43 @@
     box-sizing: border-box;
 }
 
-/* Base Page Styling */
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
 }
 
-/* Header Navigation Bar */
+/* Navigation */
 nav {
     background-color: #003366;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    padding: 1rem;
+    text-align: center;
 }
 
-/* Navigation Links */
 nav a {
     color: white;
-    padding: 10px 15px;
-    display: block;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #005599;
-}
-
-/* Main Content */
+/* Main */
 main {
-    max-width: 840px;
-    margin: 2rem auto;
+    max-width: 800px;
+    margin: auto;
     padding: 1rem;
 }
 
-/* Sections */
-section {
-    margin-bottom: 2rem;
-}
-
-/* Float profile image */
+/* Images float right */
 main img {
     float: right;
     margin-left: 1rem;
     width: 150px;
-    height: auto;
     border: 2px solid #333;
     padding: 5px;
 }
 
 /* Clear float */
-section::after {
+main::after {
     content: "";
     display: block;
     clear: both;
@@ -65,26 +50,25 @@ section::after {
 /* Headings */
 h1, h2 {
     color: #003366;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
-/* Aside Section */
+/* Aside */
 aside {
     width: 20rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     position: relative;
 }
 
-/* Aside Image Centered */
+/* Aside image */
 aside img {
     display: block;
     margin: 0 auto;
     width: 200px;
-    height: auto;
 }
 
-/* Overlay heading for aside */
+/* Overlay heading */
 aside h2 {
     position: absolute;
     top: 10px;
@@ -92,28 +76,27 @@ aside h2 {
     transform: translateX(-50%);
     background-color: rgba(0,0,0,0.6);
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Footer */
 footer {
-    margin-top: 20px;
     text-align: center;
     background-color: #003366;
     color: white;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 /* Class Selectors */
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0,0,0,0.1);
     background-color: #ddd;
 }
 
-/* Temple list styling */
+/* Temple list */
 ul.box {
     list-style: none;
 }
