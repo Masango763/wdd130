@@ -30,7 +30,6 @@ nav a {
     color: white;
     padding: 10px 15px;
     display: inline-block;
-    /* horizontal links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -62,12 +61,12 @@ main {
 /* Profile image floating right */
 main img {
     width: 200px;
-    /* smaller and fits layout */
     max-width: 40%;
     height: auto;
     float: right;
     margin: 0 0 1rem 1rem;
     border: 2px solid #003366;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================
@@ -87,21 +86,21 @@ p {
 aside {
     width: 20rem;
     text-align: left;
-    /* text aligns left */
     position: relative;
     margin: 20px auto;
 }
 
-/* Zimbabwe image floated right */
+/* Zimbabwe image floated right with shadow */
 aside img {
     width: 150px;
     height: auto;
     float: right;
     margin: 0 0 1rem 1rem;
     display: block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Remove overlay for heading */
+/* Heading in aside */
 aside h2 {
     position: static;
     color: #003366;
