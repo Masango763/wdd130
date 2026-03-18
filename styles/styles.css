@@ -1,31 +1,26 @@
-/* =========================
-   Universal Selector
-   ========================= */
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================
-   Global Styles
-   ========================= */
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     color: #333;
 }
 
-/* =========================
-   Header & Navigation
-   ========================= */
+/* Header */
 header {
-    background-color: #003366;
+    background: #003366;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
+/* Navigation */
 nav a {
     color: white;
     padding: 10px 15px;
@@ -38,40 +33,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* =========================
-   Headings
-   ========================= */
-h1,
-h2 {
+/* Headings */
+h1, h2 {
     color: #003366;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-/* =========================
-   Main Content
-   ========================= */
+/* Main */
 main {
     max-width: 840px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background: white;
 }
 
-/* Profile image floating right */
+/* Profile Image */
 main img {
     width: 200px;
     max-width: 40%;
-    height: auto;
     float: right;
     margin: 0 0 1rem 1rem;
     border: 2px solid #003366;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
-/* =========================
-   Sections
-   ========================= */
+/* Sections */
 section {
     margin-bottom: 2rem;
 }
@@ -80,72 +67,64 @@ p {
     text-align: justify;
 }
 
-/* =========================
-   Aside
-   ========================= */
+/* Aside */
 aside {
     width: 20rem;
-    text-align: left;
-    position: relative;
     margin: 20px auto;
+    text-align: left;
 }
 
-/* Zimbabwe image floated right with shadow */
 aside img {
     width: 150px;
-    height: auto;
     float: right;
     margin: 0 0 1rem 1rem;
-    display: block;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Heading in aside */
-aside h2 {
-    position: static;
-    color: #003366;
-    margin-bottom: 0.5rem;
-}
-
-/* =========================
-   Footer
-   ========================= */
+/* Footer */
 footer {
-    background-color: #003366;
+    background: #003366;
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 20px;
 }
 
-/* =========================
-   Class Selectors
-   ========================= */
+/* Box Class */
 .box {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+    background: #ddd;
 }
 
-/* =========================
-   Responsive adjustments
-   ========================= */
+/* Temple List */
+ul.box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+ul.box li a {
+    background: #003366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+ul.box li a:hover {
+    background: #0055aa;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
-
-    main,
-    aside {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    main img,
-    aside img {
-        width: 90%;
+    main img, aside img {
         float: none;
-        margin: 0 auto 1rem auto;
+        width: 90%;
         display: block;
+        margin: auto;
     }
 
     nav a {
