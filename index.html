@@ -1,139 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Learn more about our white water rafting company, our history, and exciting adventures.">
-    <meta name="author" content="Masango Dewheretsoko">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | White Water Rafting</title>
 
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
-
-<body>
-
-<header>
-    <img src="images/logo.png" alt="Rafting Company Logo">
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="trips.html">Trips</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <div class="hero">
-        <img src="images/hero.jpg" alt="Rafting Adventure">
-
-        <h1>White Water Rafting Company</h1>
-
-        <article>
-            <img src="images/happy-client.jpg" alt="Happy Client">
-            <p>
-                Our mission is to provide thrilling and safe rafting experiences.
-                We believe in adventure, teamwork, and creating unforgettable memories.
-            </p>
-        </article>
-    </div>
-
-    <section>
-        <h2>History</h2>
-        <p>
-            Founded in 2000, our company has grown from a small local business into a leading rafting provider.
-            We have guided thousands of adventurers through exciting river experiences.
-        </p>
-    </section>
-
-    <section>
-        <h2>Adventure Awaits You!</h2>
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 White Water Rafting | Masango Dewheretsoko</p>
-
-    <nav class="socialmedia">
-        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-    </nav>
-</footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
+    <title>Masango Dewheretsoko | WDD 130</title>
     <meta name="description"
-      content="Learn more about our white water rafting company, our history, and exciting adventures.">
+      content="Masango Dewheretsoko WDD130 home page showcasing learning progress in HTML and CSS.">
     <meta name="author" content="Masango Dewheretsoko">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | White Water Rafting</title>
 
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
-
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="wwr/">Rafting Website</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
         </nav>
     </header>
 
     <main>
 
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure">
-
-            <h1>White Water Rafting Company</h1>
-
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client">
-                <p>
-                    Our mission is to provide thrilling and safe rafting experiences.
-                    We believe in adventure, teamwork, and creating unforgettable memories.
-                </p>
-            </article>
-        </div>
-
+        <!-- Introduction -->
         <section>
-            <h2>History</h2>
+            <h1>Masango Dewheretsoko | WDD 130</h1>
+            <img src="images/profile.jpg" alt="My profile picture">
             <p>
-                Founded in 2000, our company has grown from a small local business into a leading
-                rafting provider.
-                We have guided thousands of adventurers through exciting river experiences.
+                Hello! My name is Masango Dewheretsoko and I am from Zimbabwe. I enjoy learning
+                about technology and web development. I am currently studying Web Fundamentals
+                where I am building skills in HTML and CSS. I am passionate about improving my
+                programming abilities and creating meaningful digital solutions.
             </p>
         </section>
 
+        <!-- Clear float so next sections don't wrap -->
+        <div style="clear: both;"></div>
+
+        <!-- Favorite City -->
         <section>
-            <h2>Adventure Awaits You!</h2>
+            <h2>My Favorite City: Harare</h2>
+            <img src="images/harare-skyline.jpg" alt="Harare Skyline">
+            <p>
+                Harare is the capital city of Zimbabwe. It is known for its beautiful skyline,
+                vibrant culture, and friendly people. The city has many attractions including
+                markets, parks, and historical sites.
+            </p>
         </section>
+
+        <!-- Temple Section -->
+        <section>
+            <h2>Salt Lake Temple</h2>
+            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+            <p>
+                The Salt Lake Temple is one of the most historic temples of The Church of Jesus
+                Christ of Latter-day Saints. It is located in Utah and is a sacred place for
+                worship and ordinances.
+            </p>
+        </section>
+
+        <!-- Temple List (REQUIRED) -->
+        <ul class="box">
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
+                  target="_blank">Philadelphia Pennsylvania Temple</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
+                  target="_blank">Paris France Temple</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple"
+                  target="_blank">Berlin Germany Temple</a></li>
+        </ul>
 
     </main>
 
-    <footer>
-        <p>© 2026 White Water Rafting | Masango Dewheretsoko</p>
+    <!-- Aside -->
+    <aside class="box">
+        <h2>Zimbabwe</h2>
+        <img src="images/zimbabwe.jpg" alt="Victoria Falls">
+        <p>
+            Zimbabwe is a country in Southern Africa known for its natural beauty and wildlife.
+            It is home to Victoria Falls, one of the largest waterfalls in the world, and the
+            historic Great Zimbabwe ruins.
+        </p>
+    </aside>
 
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </nav>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ❖ Masango Dewheretsoko ❖ Zimbabwe</p>
     </footer>
 
 </body>
