@@ -35,6 +35,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+}
+
+header img {
+    height: 60px;
 }
 
 /* NAVIGATION */
@@ -46,7 +51,8 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    /* FIXED */
     font-weight: bold;
 }
 
@@ -64,6 +70,14 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+/* SECTIONS */
+section {
+    background-color: var(--accent1-color);
+    /* FIXED */
+    margin: 20px 0;
+    padding: 16px;
 }
 
 /* HERO */
@@ -95,7 +109,8 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
 }
 
 /* ARTICLE IMAGE */
