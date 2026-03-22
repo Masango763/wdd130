@@ -22,13 +22,14 @@
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
+    line-height: 1.6;
 }
 
 /* PAGE WIDTH */
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -54,13 +55,11 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--primary-color);
-    /* ✅ FIXED contrast */
     font-weight: bold;
 }
 
 nav a:hover {
     color: var(--secondary-color);
-    /* optional hover effect */
 }
 
 /* HEADINGS */
@@ -68,15 +67,6 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-/* SPACING */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
 }
 
 /* SECTIONS */
@@ -89,6 +79,7 @@ section {
 /* HERO */
 .hero {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .hero img {
@@ -101,42 +92,52 @@ section {
 .hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
     background-color: var(--accent2-color);
     color: white;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 /* HERO ARTICLE */
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 10px;
+    margin-top: 1rem;
 }
 
 /* ARTICLE IMAGE */
 .hero article img {
-    float: right;
     width: 125px;
     margin-left: 10px;
+    float: none; /* remove float to keep flex layout */
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
     width: 30px;
+    height: auto;
 }
