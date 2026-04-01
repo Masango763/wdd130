@@ -10,9 +10,7 @@
 }
 
 /* RESET */
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,9 +42,8 @@ header img {
     height: 60px;
 }
 
-/* NAVIGATION */
-nav ul {
-    list-style: none;
+/* NAVIGATION (FIXED) */
+nav {
     display: flex;
     gap: 20px;
 }
@@ -68,15 +65,6 @@ h2 {
     color: var(--primary-color);
 }
 
-/* SPACING */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
 /* SECTIONS */
 section {
     background-color: var(--accent1-color);
@@ -85,73 +73,50 @@ section {
     border-radius: 6px;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
+/* IFRAME FIX */
+iframe {
     width: 100%;
-    height: auto;
+    border: none;
+    margin-top: 10px;
 }
 
-/* HERO TITLE */
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--accent2-color);
-    color: white;
-    opacity: 0.8;
-}
-
-/* HERO ARTICLE */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 10px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 10px;
-}
-
-/* HISTORY IMAGE */
-.history-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: auto;
-}
-
-/* ADVENTURES */
-.adventures {
+/* FORM */
+form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
-.adventures figure {
-    flex: 1 1 150px;
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* TEAM IMAGES */
+figure {
     text-align: center;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 4px;
+    margin: 10px;
 }
 
-.adventures img {
+figure img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    max-width: 200px;
+    border-radius: 6px;
 }
 
 /* FOOTER */
@@ -160,7 +125,6 @@ footer {
     padding: 10px;
     background-color: var(--accent2-color);
     color: white;
-    border-top: 2px solid var(--primary-color);
 }
 
 /* SOCIAL MEDIA */
@@ -171,11 +135,6 @@ footer {
     gap: 15px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .socialmedia img {
     width: 30px;
-    height: auto;
 }
