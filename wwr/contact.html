@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
       content="Contact Zambezi White Water Rafting for bookings, questions, and adventure trip information.">
     <meta name="author" content="Masango Dewheretsoko">
-
     <title>Contact Us - Zambezi White Water Rafting</title>
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <img src="images/logo.png" alt="Zambezi White Water Rafting Logo">
 
@@ -27,10 +25,12 @@
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main>
 
         <h1>Contact Zambezi White Water Rafting</h1>
 
+        <!-- CONTACT INFO -->
         <section>
             <h2>Contact Information</h2>
 
@@ -43,6 +43,7 @@
             </iframe>
         </section>
 
+        <!-- TEAM -->
         <section>
             <h2>Our Team</h2>
 
@@ -65,45 +66,43 @@
                 <img src="images/employee4.jpg" alt="Sarah - Customer Support">
                 <figcaption>Sarah - Customer Support</figcaption>
             </figure>
-
         </section>
 
+        <!-- FORM -->
         <section>
             <h2>Send Us a Message</h2>
 
             <form>
 
+                <!-- NAME -->
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
 
+                <!-- EMAIL -->
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
 
+                <!-- RADIO BUTTONS -->
                 <p>Purpose of Message:</p>
 
-                <label>
-                    <input type="radio" name="purpose" value="general">
-                    General Inquiry
-                </label>
+                <input type="radio" id="general" name="purpose" value="general">
+                <label for="general">General Inquiry</label>
 
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label>
 
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <label for="suggestion">Website Suggestion</label>
 
+                <!-- MESSAGE -->
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
 
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <!-- CHECKBOX -->
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
+                <!-- SUBMIT -->
                 <button type="submit">Send Message to Team</button>
 
             </form>
@@ -111,14 +110,15 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
 
         <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Visit our Twitter page"></a>
+            <a href="#"><img src="images/instagram.png" alt="Visit our Instagram page"></a>
         </nav>
 
     </footer>
