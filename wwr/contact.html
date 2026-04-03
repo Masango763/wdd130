@@ -13,114 +13,106 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
         <img src="images/logo.png" alt="Zambezi White Water Rafting Logo">
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- MAIN -->
     <main>
 
-        <h1>Contact Zambezi White Water Rafting</h1>
+        <h1>White Water Rafting Company</h1>
 
         <!-- CONTACT INFO -->
-        <section>
-            <h2>Contact Information</h2>
-
-            <p><strong>Address:</strong> Victoria Falls, Zimbabwe</p>
-            <p><strong>Phone:</strong> +263 777 123 456</p>
-            <p><strong>Email:</strong> info@zambezirafting.com</p>
-
-            <iframe src="https://www.google.com/maps?q=Victoria%20Falls,%20Zimbabwe&output=embed"
-              height="300" title="Map of Victoria Falls, Zimbabwe">
-            </iframe>
+        <section class="contact-info">
+            <p>123 Main River Street</p>
+            <p>Victoria Falls, Zimbabwe</p>
+            <p>+263 77 123 4567</p>
+            <p>info@zambezirafting.com</p>
         </section>
 
-        <!-- TEAM -->
-        <section>
-            <h2>Our Team</h2>
+        <!-- GRID: MAP + FORM -->
+        <section class="contact-grid">
 
-            <figure>
-                <img src="images/employee1.jpg" alt="John - Senior Rafting Guide">
-                <figcaption>John - Senior Rafting Guide</figcaption>
-            </figure>
+            <!-- MAP -->
+            <div class="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=victoria%20falls&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
 
-            <figure>
-                <img src="images/employee2.jpg" alt="Mary - Safety Instructor">
-                <figcaption>Mary - Safety Instructor</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee3.jpg" alt="Peter - Trip Coordinator">
-                <figcaption>Peter - Trip Coordinator</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee4.jpg" alt="Sarah - Customer Support">
-                <figcaption>Sarah - Customer Support</figcaption>
-            </figure>
-        </section>
-
-        <!-- FORM -->
-        <section>
-            <h2>Send Us a Message</h2>
-
+            <!-- FORM -->
             <form>
 
-                <!-- NAME -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="Placeholder">
 
-                <!-- EMAIL -->
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Placeholder">
 
-                <!-- RADIO BUTTONS -->
-                <p>Purpose of Message:</p>
+                <p>Message Purpose</p>
 
-                <input type="radio" id="general" name="purpose" value="general">
+                <input type="radio" id="general" name="purpose">
                 <label for="general">General Inquiry</label>
 
-                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <input type="radio" id="reservation" name="purpose">
                 <label for="reservation">Reservation Question</label>
 
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <input type="radio" id="suggestion" name="purpose">
                 <label for="suggestion">Website Suggestion</label>
 
-                <!-- MESSAGE -->
                 <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" placeholder="Type here"></textarea>
 
-                <!-- CHECKBOX -->
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-                <!-- SUBMIT -->
-                <button type="submit">Send Message to Team</button>
+                <button type="submit">Get in Touch</button>
 
             </form>
+
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/employee1.jpg" alt="John - Senior Rafting Guide">
+                    <figcaption>John - Senior Rafting Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mary - Safety Instructor">
+                    <figcaption>Mary - Safety Instructor</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Peter - Trip Coordinator">
+                    <figcaption>Peter - Trip Coordinator</figcaption>
+                </figure>
+
+            </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
-
         <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
-            <a href="#"><img src="images/twitter.png" alt="Visit our Twitter page"></a>
-            <a href="#"><img src="images/instagram.png" alt="Visit our Instagram page"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </nav>
-
     </footer>
 
 </body>
