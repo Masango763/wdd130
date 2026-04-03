@@ -1,4 +1,6 @@
-/* CSS VARIABLES */
+/* =========================
+   VARIABLES
+========================= */
 :root {
     --primary-color: #0b3c5d;
     --secondary-color: #328cc1;
@@ -9,20 +11,23 @@
     --body-font: Arial, sans-serif;
 }
 
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BASE
+========================= */
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
 }
 
-/* PAGE WIDTH */
 header,
 main,
 footer {
@@ -30,7 +35,16 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +58,7 @@ header img {
     height: 70px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav ul {
     display: flex;
     list-style: none;
@@ -57,53 +71,40 @@ nav a {
     border: 1px solid #999;
     background-color: #eee;
     color: black;
-    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #ddd;
-}
-
-/* HEADINGS */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    text-align: center;
-    margin: 15px 0;
-}
-
-/* CONTACT INFO */
+/* =========================
+   CONTACT INFO
+========================= */
 .contact-info {
     text-align: center;
-    margin-bottom: 25px;
     line-height: 1.6;
+    margin-bottom: 25px;
 }
 
-/* GRID (MAP + FORM) */
+/* =========================
+   CONTACT GRID (FIXED)
+========================= */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    /* creates clear space between map and form */
-    align-items: start;
-    /* prevents unwanted stretching overflow */
+    align-items: stretch;
+    /* KEY FIX */
 }
 
-/* MAP CONTAINER */
+/* MAP */
 .map {
-    width: 100%;
     height: 100%;
     overflow: hidden;
-    /* prevents map spilling into form */
     border-radius: 6px;
 }
 
-/* MAP IFRAME */
 .map iframe {
     width: 100%;
     height: 100%;
-    min-height: 450px;
-    /* matches form height visually */
+    min-height: 500px;
+    /* ensures match with form */
     border: none;
     display: block;
 }
@@ -113,11 +114,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
-}
-
-form label {
-    font-weight: bold;
 }
 
 form input,
@@ -132,30 +128,27 @@ textarea {
     height: 120px;
 }
 
-/* RADIO BUTTONS */
+/* radio + checkbox */
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
 }
 
-/* BUTTON */
+/* button */
 button {
     padding: 10px;
     border: 1px solid #999;
     background-color: #eee;
     cursor: pointer;
-    font-weight: bold;
 }
 
-button:hover {
-    background-color: #ddd;
-}
-
-/* EMPLOYEE SECTION */
+/* =========================
+   EMPLOYEES
+========================= */
 .employees {
-    border: 1px solid #999;
     margin-top: 25px;
+    border: 1px solid #999;
     padding: 15px;
     text-align: center;
 }
@@ -163,13 +156,8 @@ button:hover {
 .employee-grid {
     display: flex;
     justify-content: space-around;
-    gap: 15px;
-    margin-top: 15px;
     flex-wrap: wrap;
-}
-
-.employee-grid figure {
-    text-align: center;
+    gap: 15px;
 }
 
 .employee-grid img {
@@ -179,16 +167,16 @@ button:hover {
     border-radius: 6px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
     background-color: #cbb4e3;
-    border: 1px solid #999;
     padding: 15px;
     text-align: center;
     margin-top: 20px;
 }
 
-/* SOCIAL MEDIA */
 .socialmedia {
     display: flex;
     justify-content: center;
