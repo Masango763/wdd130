@@ -90,29 +90,37 @@ nav a {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: stretch;
-    /* KEY FIX */
 }
 
-/* MAP */
-.map {
+/* Make both columns equal height */
+.map,
+form {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+}
+
+/* =========================
+   MAP FIX
+========================= */
+.map {
     overflow: hidden;
     border-radius: 6px;
+    min-height: 450px;
 }
 
 .map iframe {
     width: 100%;
     height: 100%;
-    min-height: 500px;
-    /* ensures match with form */
-    border: none;
+    min-height: 450px;
+    border: 0;
     display: block;
 }
 
-/* FORM */
+/* =========================
+   FORM
+========================= */
 form {
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
