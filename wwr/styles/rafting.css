@@ -92,16 +92,15 @@ nav a {
     align-items: stretch;
 }
 
-/* Make both columns equal height */
+/* Make both sides equal height */
 .map,
 form {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 /* =========================
-   MAP FIX
+   MAP FIX (NO OVERLAP)
 ========================= */
 .map {
     overflow: hidden;
