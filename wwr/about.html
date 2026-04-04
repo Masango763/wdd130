@@ -7,7 +7,9 @@
     <meta name="description"
       content="Learn about Zambezi White Water Rafting, our mission, history, and exciting river adventures.">
     <meta name="author" content="Masango Dewheretsoko">
-    <title>About Us - Zambezi White Water Rafting</title>
+
+    <title>About Us | Zambezi White Water Rafting</title>
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -18,11 +20,13 @@
         <img src="images/logo.png" alt="Zambezi White Water Rafting Company Logo">
 
         <nav>
-            <!-- FIX: removed <ul> to match your other pages -->
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <!-- ✅ FIXED: added UL -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -39,30 +43,37 @@
                 <img src="images/happy_client.jpg" alt="Happy client enjoying rafting experience">
                 <p>
                     We provide thrilling and safe rafting experiences for all adventure lovers.
-                    Our mission is to create unforgettable moments while exploring the beauty of
-                    nature.
+                    Our mission is to create unforgettable moments while exploring nature.
                 </p>
             </article>
         </section>
 
-        <!-- HISTORY -->
-        <section>
+        <!-- HISTORY (FIXED LAYOUT) -->
+        <section class="history">
             <h2>History</h2>
 
-            <img src="images/history.jpg" alt="Rafting history" class="history-img">
+            <div class="history-content">
 
-            <p>
-                Founded in 2010, Zambezi White Water Rafting has grown into one of the most trusted
-                adventure providers. What began as a passion for rivers has become a leading
-                experience delivering excitement and safety to all our guests.
-            </p>
+                <p>
+                    Founded in 2010, Zambezi White Water Rafting began as a small adventure
+                    company with a passion for rivers and outdoor experiences.
+                </p>
+
+                <img src="images/history.jpg" alt="Rafting history and early adventures">
+
+                <p>
+                    Today, we are one of the most trusted rafting providers, delivering
+                    safe and exciting experiences to adventurers from around the world.
+                </p>
+
+            </div>
         </section>
 
         <!-- ADVENTURES -->
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
 
-            <div class="adventures">
+            <div class="adventure-gallery">
 
                 <figure>
                     <img src="images/raft1.jpg" alt="Los Dientes del Diablo rapid experience">
