@@ -31,8 +31,9 @@
 
     <main>
 
-        <h1>White Water Rafting Company</h1>
+        <h1>Zambezi White Water Rafting</h1>
 
+        <!-- CONTACT INFO -->
         <section class="contact-info">
             <p>123 Main River Street</p>
             <p>Victoria Falls, Zimbabwe</p>
@@ -40,41 +41,49 @@
             <p>info@zambezirafting.com</p>
         </section>
 
-        <!-- CONTACT GRID -->
+        <!-- GRID -->
         <section class="contact-grid">
 
             <!-- MAP -->
             <div class="map">
                 <iframe
-                  src="https://maps.google.com/maps?q=victoria%20falls&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                </iframe>
+                  src="https://maps.google.com/maps?q=victoria%20falls&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>
 
             <!-- FORM -->
-            <form action="#" method="post">
+            <form>
 
+                <!-- NAME -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
 
+                <!-- EMAIL -->
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
 
-                <label for="purpose">Purpose of Message</label>
-                <select id="purpose" name="purpose">
-                    <option value="booking">Booking Inquiry</option>
-                    <option value="question">General Question</option>
-                    <option value="feedback">Feedback</option>
-                </select>
+                <!-- PURPOSE -->
+                <p><strong>Message Purpose</strong></p>
 
+                <input type="radio" id="general" name="purpose" value="general">
+                <label for="general">General Inquiry</label>
+
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label>
+
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <label for="suggestion">Website Suggestion</label>
+
+                <!-- MESSAGE -->
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message"
+                  placeholder="Type your message here"></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to updates
-                </label>
+                <!-- CHECKBOX -->
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-                <button type="submit">Send Message</button>
+                <!-- BUTTON -->
+                <button type="submit">Get in Touch</button>
 
             </form>
 
@@ -87,17 +96,17 @@
             <div class="employee-grid">
 
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <img src="images/employee1.jpg" alt="John - Senior Rafting Guide">
                     <figcaption>John - Senior Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <img src="images/employee2.jpg" alt="Mary - Safety Instructor">
                     <figcaption>Mary - Safety Instructor</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <img src="images/employee3.jpg" alt="Peter - Trip Coordinator">
                     <figcaption>Peter - Trip Coordinator</figcaption>
                 </figure>
 
@@ -110,9 +119,9 @@
         <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Visit our Twitter page"></a>
+            <a href="#"><img src="images/instagram.png" alt="Visit our Instagram page"></a>
         </nav>
     </footer>
 
