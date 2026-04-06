@@ -49,6 +49,20 @@ main h1 {
     margin: 20px 0;
 }
 
+section {
+    background-color: #f4f4f4;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -69,7 +83,6 @@ header img {
     justify-self: center;
 }
 
-/* NAVIGATION */
 header nav {
     display: flex;
     justify-content: center;
@@ -137,20 +150,98 @@ header nav a:hover {
 }
 
 /* =========================
-   GENERAL SECTION STYLING
+   HOME PAGE
 ========================= */
-section {
-    background-color: #f4f4f4;
+.home-hero {
+    position: relative;
+    margin: 20px 0;
     border: 1px solid var(--primary-color);
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
-section h2 {
+.home-hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
     text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(11, 60, 93, 0.7);
+    padding: 15px;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
     color: black;
-    font-size: 2rem;
-    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--accent1-color);
+    color: black;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 /* =========================
@@ -230,7 +321,6 @@ section h2 {
     display: block;
 }
 
-/* FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -310,6 +400,51 @@ button:hover {
 }
 
 /* =========================
+   TRIPS PAGE
+========================= */
+.trips-cta {
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip-card {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table-section th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* =========================
    FOOTER
 ========================= */
 footer {
@@ -358,7 +493,8 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .hero > img {
+    .hero > img,
+    .home-hero img {
         height: auto;
     }
 
@@ -378,17 +514,15 @@ footer p {
         margin: 0 auto 15px auto;
     }
 
-    .history-content {
+    .history-content,
+    .home-grid,
+    .contact-grid,
+    .trip-grid {
         grid-template-columns: 1fr;
-        text-align: center;
     }
 
     .adventure-gallery {
         justify-content: center;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
     }
 
     footer {
