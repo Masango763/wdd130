@@ -3,62 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore exciting rafting trips on the Zambezi River, from beginner-friendly adventures to thrilling all-day rapids.">
+    <meta name="description" content="Explore rafting trips with Zambezi White Water Rafting, including trip details, photos, and booking information.">
     <meta name="author" content="Masango Dewheretsoko">
-    <title>Trips | Zambezi White Water Rafting</title>
+    <title>Zambezi White Water Rafting | Trips</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-
+    <!-- HEADER -->
     <header>
-        <img src="images/logo.png" alt="Zambezi White Water Rafting Company Logo">
+        <img src="images/logo.png" alt="Zambezi White Water Rafting Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Our Rafting Trips</h1>
+        <h1>Rafting Trips</h1>
 
-        <section class="trips-cta">
-            <h2>Need Help Choosing a Trip?</h2>
-            <p>
-                Our team is ready to help you find the perfect rafting experience based on your adventure level and group size.
-            </p>
-            <a href="contact.html" class="cta-button">Contact Us</a>
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <a href="contact.html" class="btn-cta">Contact Us to Book Your Trip</a>
         </section>
 
-        <section class="trip-grid">
-            <article class="trip-card">
-                <img src="images/raft3.jpg" alt="Half day rafting trip on the Zambezi River">
-                <h2>Half Day Adventure</h2>
-                <p>
-                    Perfect for beginners and families, this trip gives you a taste of the Zambezi’s excitement while keeping the pace comfortable and fun.
-                </p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/raft4.jpg" alt="Full day rafting through intense rapids">
-                <h2>Full Day Extreme</h2>
-                <p>
-                    A full-day adrenaline experience packed with powerful rapids, incredible scenery, and unforgettable memories for thrill seekers.
-                </p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/raft5.jpg" alt="Sunset rafting trip with scenic river views">
-                <h2>Sunset Rafting Experience</h2>
-                <p>
-                    Enjoy a scenic late-afternoon rafting adventure with breathtaking sunset views and a more relaxed but still exciting river journey.
-                </p>
-            </article>
+        <!-- TRIP DETAILS -->
+        <section class="trips">
+            <div class="trip">
+                <img src="images/trip1.jpg" alt="Beginner Rafting Trip">
+                <h3>Beginner Rapids</h3>
+                <p>A gentle adventure perfect for newcomers, offering stunning scenery and mild rapids.</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip2.jpg" alt="Intermediate Rafting Trip">
+                <h3>Intermediate Rapids</h3>
+                <p>For those seeking a moderate challenge with exciting waves and river obstacles.</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip3.jpg" alt="Expert Rafting Trip">
+                <h3>Expert Rapids</h3>
+                <p>High-adrenaline adventure on the toughest rapids for experienced rafters.</p>
+            </div>
         </section>
 
-        <section class="trip-table-section">
-            <h2>Available Trips Overview</h2>
+        <!-- TRIPS TABLE -->
+        <section class="trips-table">
+            <h2>Trip Information</h2>
             <table>
                 <thead>
                     <tr>
@@ -70,54 +63,36 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Half Day Adventure</td>
+                        <td>Beginner Rapids</td>
+                        <td>2 Hours</td>
+                        <td>Easy</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Rapids</td>
                         <td>4 Hours</td>
-                        <td>Beginner</td>
-                        <td>$80</td>
-                    </tr>
-                    <tr>
-                        <td>Full Day Extreme</td>
-                        <td>8 Hours</td>
-                        <td>Advanced</td>
-                        <td>$150</td>
-                    </tr>
-                    <tr>
-                        <td>Sunset Rafting Experience</td>
-                        <td>3 Hours</td>
-                        <td>Intermediate</td>
-                        <td>$95</td>
-                    </tr>
-                    <tr>
-                        <td>Big Mallard Run</td>
-                        <td>6 Hours</td>
-                        <td>Intermediate</td>
+                        <td>Moderate</td>
                         <td>$120</td>
                     </tr>
                     <tr>
-                        <td>Los Dientes Challenge</td>
-                        <td>7 Hours</td>
-                        <td>Advanced</td>
-                        <td>$140</td>
+                        <td>Expert Rapids</td>
+                        <td>6 Hours</td>
+                        <td>Hard</td>
+                        <td>$200</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Visit our Facebook page">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Visit our Twitter page">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Visit our Instagram page">
-            </a>
+            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Visit our Twitter page"></a>
+            <a href="#"><img src="images/instagram.png" alt="Visit our Instagram page"></a>
         </nav>
     </footer>
-
 </body>
 </html>

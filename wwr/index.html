@@ -3,86 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience unforgettable white water rafting adventures on the Zambezi River with exciting trips, breathtaking scenery, and expert guides.">
+    <meta name="description" content="Home page for Zambezi White Water Rafting. Experience adventure trips, sign up for our newsletter, and explore rafting options.">
     <meta name="author" content="Masango Dewheretsoko">
-    <title>Home | Zambezi White Water Rafting</title>
+    <title>Zambezi White Water Rafting | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-
+    <!-- HEADER -->
     <header>
-        <img src="images/logo.png" alt="Zambezi White Water Rafting Company Logo">
+        <img src="images/logo.png" alt="Zambezi White Water Rafting Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <div class="home-hero">
-            <img src="images/hero.jpg" alt="White water rafting adventure on the Zambezi River">
+        <!-- HERO IMAGE -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting adventure on the Zambezi River">
             <h1>Adventure Starts Here</h1>
-        </div>
-
-        <section class="cta">
-            <h2>Ready for the Ride of a Lifetime?</h2>
-            <p>
-                Discover thrilling rapids, unforgettable views, and rafting experiences designed for every adventurer.
-                Explore our exciting rafting packages and choose your next adventure today!
-            </p>
-            <a href="trips.html" class="cta-button">View Our Trips</a>
         </section>
 
+        <!-- NEWSLETTER -->
         <section class="newsletter">
-            <h2>Join Our Newsletter</h2>
-            <form action="#" method="post" class="newsletter-form">
+            <h2>Join Our Adventure Newsletter</h2>
+            <form>
                 <label for="newsletter-name">Name</label>
-                <input type="text" id="newsletter-name" name="newsletter-name" required>
+                <input type="text" id="newsletter-name" name="newsletter-name" placeholder="Enter your name">
 
                 <label for="newsletter-email">Email</label>
-                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email">
 
                 <button type="submit">Sign Up</button>
             </form>
         </section>
 
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <a href="trips.html" class="btn-cta">Explore Our Rafting Trips</a>
+        </section>
+
+        <!-- GRID CONTENT -->
         <section class="home-grid">
             <div class="grid-item">
-                <img src="images/raft1.jpg" alt="Exciting white water rafting rapids">
-                <h2>Our Purpose</h2>
-                <p>
-                    At Zambezi White Water Rafting, our purpose is to provide safe, exciting, and memorable river adventures
-                    that connect people with nature and challenge them in the best way possible.
-                </p>
+                <img src="images/adventure1.jpg" alt="Exciting Rapids">
+                <h3>Exciting Rapids</h3>
+                <p>Experience adrenaline-pumping rapids that challenge and thrill every adventurer.</p>
             </div>
-
             <div class="grid-item">
-                <img src="images/raft2.jpg" alt="Rafting team paddling through river rapids">
-                <h2>What We Offer</h2>
-                <p>
-                    From half-day beginner adventures to intense full-day rapid experiences, we offer a range of rafting trips
-                    for families, friends, and serious thrill seekers alike.
-                </p>
+                <img src="images/adventure2.jpg" alt="Scenic River Views">
+                <h3>Scenic River Views</h3>
+                <p>Enjoy breathtaking views of the Zambezi River surrounded by pristine wilderness.</p>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Visit our Facebook page">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Visit our Twitter page">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Visit our Instagram page">
-            </a>
+            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Visit our Twitter page"></a>
+            <a href="#"><img src="images/instagram.png" alt="Visit our Instagram page"></a>
         </nav>
     </footer>
-
 </body>
 </html>
