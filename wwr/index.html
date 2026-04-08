@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Zambezi White Water Rafting. Experience adventure trips, sign up for our newsletter, and explore rafting options.">
+    <meta name="description"
+      content="Home page for Zambezi White Water Rafting. Experience adventure trips, sign up for our newsletter, and explore rafting options.">
     <meta name="author" content="Masango Dewheretsoko">
     <title>Zambezi White Water Rafting | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
         <img src="images/logo.png" alt="Zambezi White Water Rafting Logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
@@ -32,18 +33,22 @@
         <!-- NEWSLETTER -->
         <section class="newsletter">
             <h2>Join Our Adventure Newsletter</h2>
-            <form>
+            <form class="newsletter-form">
                 <label for="newsletter-name">Name</label>
-                <input type="text" id="newsletter-name" name="newsletter-name" placeholder="Enter your name">
+                <input type="text" id="newsletter-name" name="newsletter-name"
+                  placeholder="Enter your name" required>
+
                 <label for="newsletter-email">Email</label>
-                <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email">
+                <input type="email" id="newsletter-email" name="newsletter-email"
+                  placeholder="Enter your email" required>
+
                 <button type="submit">Sign Up</button>
             </form>
         </section>
 
         <!-- CALL TO ACTION -->
         <section class="cta">
-            <a href="trips.html" class="btn-cta">Explore Our Rafting Trips</a>
+            <a href="trips.html" class="cta-button">Explore Our Rafting Trips</a>
         </section>
 
         <!-- GRID CONTENT -->
@@ -51,12 +56,14 @@
             <div class="grid-item">
                 <img src="images/adventure1.jpg" alt="Exciting Rapids">
                 <h3>Exciting Rapids</h3>
-                <p>Experience adrenaline-pumping rapids that challenge and thrill every adventurer.</p>
+                <p>Experience adrenaline-pumping rapids that challenge and thrill every adventurer.
+                </p>
             </div>
             <div class="grid-item">
                 <img src="images/adventure2.jpg" alt="Scenic River Views">
                 <h3>Scenic River Views</h3>
-                <p>Enjoy breathtaking views of the Zambezi River surrounded by pristine wilderness.</p>
+                <p>Enjoy breathtaking views of the Zambezi River surrounded by pristine wilderness.
+                </p>
             </div>
         </section>
     </main>
@@ -71,4 +78,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
