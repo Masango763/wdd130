@@ -1,22 +1,21 @@
+correct this code
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting Company">
+    <meta name="description"
+      content="Contact Zambezi White Water Rafting for bookings, questions, and adventure trip information.">
     <meta name="author" content="Masango Dewheretsoko">
-    <title>Contact Us | White Water Rafting Company</title>
-
+    <title>Contact Us | Zambezi White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-
+    <header>
+        <img src="images/logo.png" alt="Zambezi White Water Rafting Company Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -26,101 +25,215 @@
     </header>
 
     <main>
+        <h1>Contact Us</h1>
 
-        <!-- COMPANY INFO (CENTERED BLOCK) -->
-        <section class="company-info">
-            <h1>White Water Rafting Company</h1>
+        <section class="contact-info">
+            <h2>Company Information</h2>
             <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
+            <p>Victoria Falls, Zimbabwe</p>
+            <p>+263 77 123 4567</p>
+            <p>info@zambezirafting.com</p>
         </section>
 
-        <!-- CONTACT GRID (MAP LEFT, FORM RIGHT) -->
         <section class="contact-grid">
-
-            <!-- MAP -->
             <div class="map">
-                <img src="images/map.jpg" alt="Map location">
+                <iframe
+                  src="https://maps.google.com/maps?q=victoria%20falls&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  title="Map showing Victoria Falls location" loading="lazy" allowfullscreen>
+                </iframe>
             </div>
 
-            <!-- FORM -->
-            <form class="contact-form">
-
+            <form action="#" method="post">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Placeholder">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Placeholder">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <p><strong>Message Purpose</strong></p>
 
-                <label>
-                    <input type="radio" name="purpose" checked>
-                    General Inquiry
-                </label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                </div>
 
-                <label>
-                    <input type="radio" name="purpose">
-                    Reservation Question
-                </label>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
 
-                <label>
-                    <input type="radio" name="purpose">
-                    Website Suggestion
-                </label>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
 
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Type here"></textarea>
+                <textarea id="message" name="message" placeholder="Type your message here"
+                  required></textarea>
 
-                <label>
-                    <input type="checkbox" checked>
-                    Please Subscribe me to the monthly newsletter
-                </label>
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
 
-                <button type="submit">Get in Touch!</button>
-
+                <button type="submit">Get in Touch</button>
             </form>
         </section>
 
-        <!-- EMPLOYEES SECTION -->
         <section class="employees">
-
-            <h2>We Are Here to Serve You</h2>
-
+            <h2>Meet Our Team</h2>
             <div class="employee-grid">
-
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee1.jpg" alt="John - Senior Rafting Guide">
+                    <figcaption>John - Senior Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee2.jpg" alt="Mary - Safety Instructor">
+                    <figcaption>Mary - Safety Instructor</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee3.jpg" alt="Peter - Trip Coordinator">
+                    <figcaption>Peter - Trip Coordinator</figcaption>
                 </figure>
-
             </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
+        <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Visit our Facebook page">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Visit our Twitter page">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Visit our Instagram page">
+            </a>
+        </nav>
+    </footer>
 
-        <p>Footer Content including Social Media Icons/Links</p>
+</body>
 
-        <div class="socials">
-            <img src="images/facebook.png" alt="Facebook">
-            <img src="images/twitter.png" alt="Twitter">
-            <img src="images/instagram.png" alt="Instagram">
-        </div>
+</html>
+<!DOCTYPE html>
+<html lang="en-US">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact Zambezi White Water Rafting for bookings, questions, and adventure trip information.">
+    <meta name="author" content="Masango Dewheretsoko">
+    <title>Contact Us | Zambezi White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Zambezi White Water Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p>123 Main River Street</p>
+            <p>Victoria Falls, Zimbabwe</p>
+            <p>+263 77 123 4567</p>
+            <p>info@zambezirafting.com</p>
+        </section>
+
+        <section class="contact-grid">
+            <div class="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=victoria%20falls&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  title="Map showing Victoria Falls location" loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <p><strong>Message Purpose</strong></p>
+
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here"
+                  required></textarea>
+
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch</button>
+            </form>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John - Senior Rafting Guide">
+                    <figcaption>John - Senior Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mary - Safety Instructor">
+                    <figcaption>Mary - Safety Instructor</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Peter - Trip Coordinator">
+                    <figcaption>Peter - Trip Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Zambezi White Water Rafting | Masango Dewheretsoko</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Visit our Facebook page">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Visit our Twitter page">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Visit our Instagram page">
+            </a>
+        </nav>
     </footer>
 
 </body>
