@@ -3,7 +3,8 @@
 ========================= */
 :root {
     --primary-color: #0b3c5d;
-    --secondary-color: #328cc1;
+    --secondary-color: #b7a7d6;
+    /* FIXED to match wireframe */
     --accent1-color: #d9b310;
     --accent2-color: #1d2731;
     --heading-font: Georgia, serif;
@@ -27,7 +28,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
-    background-color: white;
     line-height: 1.6;
 }
 
@@ -61,23 +61,18 @@ section {
 
 section h2 {
     text-align: center;
-    color: black;
-    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 /* =========================
-   HEADER + NAVIGATION
+   HEADER
 ========================= */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    padding: 15px 20px;
-    border: 1px solid var(--primary-color);
-    margin-top: 20px;
-    border-bottom: 4px solid var(--accent1-color);
+    padding: 20px;
 }
 
 header img {
@@ -86,22 +81,19 @@ header img {
 
 header nav {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 header nav a {
-    display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid var(--primary-color);
-    background-color: white;
-    color: var(--primary-color);
+    background: white;
+    border: 1px solid black;
     font-weight: bold;
 }
 
 header nav a:hover {
     background-color: var(--accent1-color);
-    color: black;
 }
 
 /* =========================
@@ -109,11 +101,10 @@ header nav a:hover {
 ========================= */
 .hero {
     position: relative;
-    margin: 20px 0;
     border: 1px solid var(--primary-color);
 }
 
-.hero > img {
+.hero img {
     width: 100%;
     height: 450px;
     object-fit: cover;
@@ -121,11 +112,28 @@ header nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: 25px;
+    top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     padding: 10px;
+}
+
+/* HERO ARTICLE (ABOUT PAGE FIX) */
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero article img {
+    width: 120px;
 }
 
 /* =========================
@@ -137,24 +145,18 @@ header nav a:hover {
 
 .cta-button {
     display: inline-block;
-    margin-top: 15px;
     padding: 12px 24px;
     background-color: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    background-color: var(--accent1-color);
     color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .newsletter-form {
     display: grid;
     gap: 10px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .home-grid {
@@ -164,15 +166,40 @@ header nav a:hover {
 }
 
 .grid-item {
-    background-color: white;
+    background: white;
     padding: 15px;
-    border: 1px solid var(--primary-color);
     text-align: center;
 }
 
 .grid-item img {
     width: 100%;
     height: 250px;
+    object-fit: cover;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 120px;
+    height: 80px;
     object-fit: cover;
 }
 
@@ -186,8 +213,7 @@ header nav a:hover {
 }
 
 .trip-card {
-    background-color: white;
-    border: 1px solid var(--primary-color);
+    background: white;
     padding: 15px;
     text-align: center;
 }
@@ -199,21 +225,22 @@ header nav a:hover {
 }
 
 /* =========================
-   CONTACT PAGE (FIXED)
+   CONTACT PAGE (WIREFRAME FIX)
 ========================= */
 .contact-info {
     text-align: center;
+    line-height: 1.8;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
 }
 
 .map {
     height: 300px;
-    border: 1px solid var(--primary-color);
 }
 
 .map iframe {
@@ -229,19 +256,14 @@ form {
 
 form input,
 form textarea {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid var(--primary-color);
-}
-
-textarea {
-    height: 100px;
 }
 
 button {
     padding: 10px;
-    border: 1px solid var(--primary-color);
-    background-color: white;
-    cursor: pointer;
+    background: #ddd;
+    border: 1px solid black;
 }
 
 /* =========================
@@ -250,6 +272,7 @@ button {
 .employee-grid {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -261,23 +284,20 @@ button {
    FOOTER
 ========================= */
 footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--primary-color);
-    border-top: 4px solid var(--accent1-color);
-    padding: 15px 20px;
-    margin: 20px auto;
 }
 
 footer p {
-    color: white;
+    color: black;
 }
 
 .socialmedia {
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
 
 .socialmedia img {
@@ -290,7 +310,6 @@ footer p {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 10px;
     }
 
     header nav {
@@ -304,15 +323,23 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .adventure-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .employee-grid {
         flex-direction: column;
         gap: 20px;
-        align-items: center;
     }
 
     footer {
         flex-direction: column;
-        gap: 10px;
         text-align: center;
     }
 }
